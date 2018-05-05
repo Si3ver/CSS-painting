@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>纯CSS绘图</title>
+    <meta charset="utf-8">
+    <style>
+        .tuoyuan {
+            background-color: gold;
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            border: 50px solid;
+            border-color: red green blue purple;
+            border-radius: 200px/100px;
+        }
+        .sanjiaoxing {
+            background-color: gold;
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            border: 50px solid rgba(255, 255, 255, .25);
+            border-right: 100px solid red;
+        }
+        .he-warning {
+            background-color: gold;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        .sjx {
+            position: absolute;
+            box-sizing: border-box;
+            width: 200px;
+            height: 200px;
+            border: 100px solid rgba(255, 255, 255, 0);
+            border-bottom: 100px solid black;
+        }
+        .he-warning .sjx:nth-child(2) {
+            transform: rotate(120deg);
+        }
+        .he-warning .sjx:nth-child(3) {
+            transform: rotate(-120deg);
+        }
+        .dbsjx {
+            position: absolute;
+            margin-top: -73px;
+            box-sizing: border-box;
+            width: 200px;
+            height: 346px;
+            border: solid rgba(255, 255, 255, 0);
+            border-bottom: solid black;
+            border-width: 173px 100px 173px 100px;
+        }
+        .he-warning .dbsjx:nth-child(2) {
+            transform: rotate(120deg);
+        }
+        .he-warning .dbsjx:nth-child(3) {
+            transform: rotate(-120deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="tuoyuan"></div>
+    <div class="sanjiaoxing"></div>
+    <div class="he-warning">
+        <div class="sjx"></div>
+        <div class="sjx"></div>
+        <div class="sjx"></div>
+    </div>
+    <div class="he-warning">
+        <div class="dbsjx"></div>
+        <div class="dbsjx"></div>
+        <div class="dbsjx"></div>
+    </div>
+</body>
+</html>
